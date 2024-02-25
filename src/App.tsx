@@ -2,7 +2,7 @@ import {useState} from "react";
 import {Loader} from "./components/loader.tsx";
 import {Content} from "./components/content.tsx";
 import Spline from '@splinetool/react-spline';
-import './App.css';
+import './App.sass';
 
 export default function App() {
   const [loading, setLoading] = useState(true);

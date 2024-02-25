@@ -1,6 +1,6 @@
 import {TypeAnimation} from "react-type-animation";
 import {useEffect} from "react";
-import '../styles/loader.css';
+import '../styles/loader.sass';
 
 export function Loader({loading}: {loading: boolean}) {
   useEffect(() => {

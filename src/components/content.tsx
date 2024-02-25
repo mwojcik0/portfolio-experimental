@@ -1,4 +1,4 @@
-import "../styles/content.css";
+import "../styles/content.sass";
 import {TypeAnimation} from "react-type-animation";
 
 export function Content() {
