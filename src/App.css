@@ -10,4 +10,8 @@ section {
   position: relative;
 }
 
+.spline {
+  position: fixed;
+}
+
 /*# sourceMappingURL=App.css.map */
