@@ -5,6 +5,7 @@ import {Content} from "./components/content.tsx";
 import Spline from '@splinetool/react-spline';
 import './App.sass';
 import {Menu} from "./components/menu.tsx";
+import {Home} from "./components/home.tsx";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -12,10 +13,11 @@ export default function App() {
   return (
     <>
       <Loader loading={loading} />
-      <Menu />
+      <Spline onLoad={() => setLoading(false)} className="spline" scene="https://prod.spline.design/VlAd4WmOD1IJbEpJ/scene.splinecode" />
       <section>
-        <Spline onLoad={() => setLoading(false)} className="spline" scene="https://prod.spline.design/VlAd4WmOD1IJbEpJ/scene.splinecode" />
+        <Menu />
         <Header />
+        <Home />
         <Content />
       </section>
     </>
