@@ -4,7 +4,9 @@ import {TypeAnimation} from "react-type-animation";
 export function Header() {
   return (
     <div id={"header"}>
-      <h1>Portfolio</h1>
+      <h1>
+        Portfolio
+      </h1>
       <h2>Marcel Wójcik</h2>
       <p>
         <TypeAnimation
@@ -22,6 +24,7 @@ export function Header() {
           repeat={Infinity}
         />
       </p>
+      <h4>(Work in progress)</h4>
     </div>
   )
 }

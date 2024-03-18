@@ -2,12 +2,12 @@ nav
   z-index: 5
   position: fixed
   bottom: 10px
-  left: 0px
+  left: 0
   display: flex
   flex-direction: column
   justify-content: flex-start
 
-  li
+  li.button
     list-style: none
     color: #d0adf0
     transition: filter 0.15s ease-in-out, transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)
@@ -43,3 +43,9 @@ nav
 
     &:active
       transform: scaleZ(1)
+
+@media screen and (max-height: 465px)
+  #pages
+    display: flex
+    flex-direction: row
+    gap: 10px

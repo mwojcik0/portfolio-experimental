@@ -2,30 +2,30 @@ nav {
   z-index: 5;
   position: fixed;
   bottom: 10px;
-  left: 0px;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-nav li {
+nav li.button {
   list-style: none;
   color: #d0adf0;
   transition: filter 0.15s ease-in-out, transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-nav li img {
+nav li.button img {
   width: 30px;
   height: 30px;
   margin: 15px 0;
 }
-nav li :hover {
+nav li.button :hover {
   cursor: pointer;
   filter: brightness(0.85);
   transition: filter 0.15s ease-in-out;
 }
-nav li:hover {
+nav li.button:hover {
   transform: scale(1.05);
 }
-nav li:active {
+nav li.button:active {
   transform: scaleZ(0.95);
 }
 
@@ -43,6 +43,14 @@ nav li:active {
 }
 #socials li:active {
   transform: scaleZ(1);
+}
+
+@media screen and (max-height: 465px) {
+  #pages {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "../styles/modal.sass";
-import {IoClose} from "react-icons/io5";
 
-export default function Modal({name}: {name: string}) {
+export default function Modal({name, children}: {name: string, children: React.ReactNode}) {
   const [open, setOpen] = useState(false);
 
   const openModal = () => {
@@ -13,8 +12,8 @@ export default function Modal({name}: {name: string}) {
         if (modal !== null) {
           var opacity = window.getComputedStyle(modal).getPropertyValue('opacity');
           modal.style.opacity = opacity === "1" ? "0" : "1";
-          var blur = window.getComputedStyle(modal).getPropertyValue('backdrop-filter');
-          modal.style.backdropFilter = blur === "blur(20px)" ? "blur(0)" : "blur(20px)";
+          // var blur = window.getComputedStyle(modal).getPropertyValue('backdrop-filter');
+          // modal.style.backdropFilter = blur === "blur(20px)" ? "blur(0)" : "blur(20px)";
         }
       }, 1);
     } else {
@@ -22,8 +21,8 @@ export default function Modal({name}: {name: string}) {
       if (modal !== null) {
         var opacity = window.getComputedStyle(modal).getPropertyValue('opacity');
         modal.style.opacity = opacity === "1" ? "0" : "1";
-        var blur = window.getComputedStyle(modal).getPropertyValue('backdrop-filter');
-        modal.style.backdropFilter = blur === "blur(20px)" ? "blur(0)" : "blur(20px)";
+        // var blur = window.getComputedStyle(modal).getPropertyValue('backdrop-filter');
+        // modal.style.backdropFilter = blur === "blur(20px)" ? "blur(0)" : "blur(20px)";
         setTimeout(() => { if (open) setOpen(false); }, 300) // zamknięcie modalu po zniknięciu
       }
     }
@@ -31,12 +30,12 @@ export default function Modal({name}: {name: string}) {
 
   return (
     <>
-      <li><a id="openModal" onClick={openModal} href={`/${name}`}>{name}</a></li>
+      <li className={"button"}><a id="openModal" onClick={openModal}>{name}</a></li>
       {open && (
         <div id="overlay">
           <div id="modal" className="dialog">
-            <button id="closeModal" className="dialog-close-btn" onClick={openModal}><IoClose size={"xl"}/></button>
-            <p>A pop-up modal component made with the native HTML dialog element with custom styles.</p>
+            <button id="closeModal" className="dialog-close-btn" onClick={openModal}>&#10005;</button>
+            {children}
           </div>
         </div>
       )}

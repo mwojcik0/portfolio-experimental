@@ -4,7 +4,6 @@ import {Header} from "./components/header.tsx";
 import Spline from '@splinetool/react-spline';
 import './App.sass';
 import {Menu} from "./components/menu.tsx";
-import {Home} from "./components/home.tsx";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -22,7 +21,7 @@ export default function App() {
         {/*  <Content/>*/}
         {/*</section>*/}
       </div>
-      <Home/>
+      {/*<Home/>*/}
     </>
   )
 }
