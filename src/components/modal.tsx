@@ -1,7 +1,7 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import "../styles/modal.sass";
 
-export default function Modal({name, children}: {name: string, children: React.ReactNode}) {
+export default function Modal({openExt, setOpenExt, children}: {openExt: boolean, setOpenExt: (x: boolean) => void, children: React.ReactNode}) {
   const [open, setOpen] = useState(false);
 
   const openModal = () => {
@@ -23,14 +23,20 @@ export default function Modal({name, children}: {name: string, children: React.R
         modal.style.opacity = opacity === "1" ? "0" : "1";
         // var blur = window.getComputedStyle(modal).getPropertyValue('backdrop-filter');
         // modal.style.backdropFilter = blur === "blur(20px)" ? "blur(0)" : "blur(20px)";
-        setTimeout(() => { if (open) setOpen(false); }, 300) // zamknięcie modalu po zniknięciu
+        setTimeout(() => { if (open) {
+          setOpen(false);
+          setOpenExt(false);
+        } }, 300) // zamknięcie modalu po zniknięciu
       }
     }
   }
 
+  useEffect(() => {
+    if(openExt !== open) openModal();
+  }, [openExt]);
+
   return (
     <>
-      <li className={"button"}><a id="openModal" onClick={openModal}>{name}</a></li>
       {open && (
         <div id="overlay">
           <div id="modal" className="dialog">

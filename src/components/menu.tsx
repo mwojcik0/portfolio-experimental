@@ -11,8 +11,8 @@ export function Menu() {
       <ul>
         <div id={"pages"}>
           <About />
-          <Work />
-          <Projects />
+          {/*<Work />*/}
+          {/*<Projects />*/}
         </div>
         <div id={"socials"}>
           <li className={"button"}><a href={"https://github.com/mwojcik0"} target={"_blank"}>
