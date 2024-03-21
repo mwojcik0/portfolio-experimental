@@ -1,8 +1,6 @@
-import Modal from '../modal.tsx';
-
 export default function Projects() {
   return (
-    <Modal name={"Projects"}>
+    <>
       <h1>My projects</h1>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl erat, tincidunt non erat sit amet, commodo
       sodales lorem. Integer ligula arcu, accumsan pretium purus nec, faucibus mollis libero. Sed tempor turpis sit amet
@@ -39,6 +37,6 @@ export default function Projects() {
       Mauris augue turpis, rhoncus consequat tortor in, iaculis vestibulum dui. Sed justo odio, pharetra at dolor
       maximus, gravida egestas ipsum. Aenean mattis felis vitae dignissim placerat. Praesent volutpat nisi dolor,
       euismod iaculis arcu sollicitudin vitae.
-    </Modal>
+    </>
   );
 }

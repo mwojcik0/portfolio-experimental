@@ -1,8 +1,6 @@
-import Modal from '../modal.tsx';
-
 export default function Work() {
   return (
-    <Modal name={"Work"}>
+    <>
       <h1>My experience</h1>
       <div>
         <h2>ZF Automotive, IT Center</h2>
@@ -45,6 +43,6 @@ export default function Work() {
         <li>Securing workstations against various types of threats</li>
         <li>Analyzing statistics using selected monitoring software</li>
       </ul>
-    </Modal>
+    </>
   );
 }
