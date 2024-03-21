@@ -24,7 +24,7 @@ export function Header() {
           repeat={Infinity}
         />
       </p>
-      <h4>(Work in progress)</h4>
+      <h3>(Work in progress)</h3>
     </div>
   )
 }

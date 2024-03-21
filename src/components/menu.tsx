@@ -14,7 +14,7 @@ function ModalContentRouter() {
       <Route path="/about" element={<About/>}/>
       <Route path="/work" element={<Work/>}/>
       <Route path="/projects" element={<Projects/>}/>
-      <Route path="/" element={<div />} />
+      <Route path="/" element={<div/>}/>
     </Routes>
   );
 }
@@ -49,20 +49,18 @@ export function Menu() {
 
   return (
     <nav>
-      <ul>
-        <div id={"pages"}>
-          <li className={"button"} onClick={() => changeModalContent("/about")}>About</li>
-          <li className={"button"} onClick={() => changeModalContent("/work")}>Work</li>
-          <li className={"button"} onClick={() => changeModalContent("/projects")}>Projects</li>
-        </div>
-        <div id={"socials"}>
-          <li className={"button"}><a href={"https://github.com/mwojcik0"} target={"_blank"}>
-            <img src={GithubLogo} alt={"Github logo"}/>
-          </a></li>
-          <li className={"button"}><a href={"https://linkedin.com/in/marcelwojcikshort"} target={"_blank"}>
-            <img src={LinkedInLogo} alt={"LinkedIn logo"}/>
-          </a></li>
-        </div>
+      <ul className={"links"}>
+        <li className={"button"} onClick={() => changeModalContent("/about")}>About</li>
+        <li className={"button"} onClick={() => changeModalContent("/work")}>Work</li>
+        <li className={"button"} onClick={() => changeModalContent("/projects")}>Projects</li>
+      </ul>
+      <ul id={"socials"} className={"links"}>
+        <li className={"button"}><a href={"https://github.com/mwojcik0"} target={"_blank"}>
+          <img src={GithubLogo} alt={"Github logo"}/>
+        </a></li>
+        <li className={"button"}><a href={"https://linkedin.com/in/marcelwojcikshort"} target={"_blank"}>
+          <img src={LinkedInLogo} alt={"LinkedIn logo"}/>
+        </a></li>
       </ul>
       <Modal openExt={open} setOpenExt={() => closeModal()}>
         <ModalContentRouter/>
