@@ -1,0 +1,14 @@
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+
+/*# sourceMappingURL=about.css.map */

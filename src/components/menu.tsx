@@ -44,6 +44,9 @@ export function Menu() {
     if (['/work', '/about', '/projects'].includes(path)) {
       setOpen(true);
       setCurrentPath(path);
+    } else if (location.pathname === "/") {
+      setOpen(false);
+      setCurrentPath("/");
     }
   }, [location.pathname]);
 

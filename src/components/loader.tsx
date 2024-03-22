@@ -8,7 +8,7 @@ export function Loader({loading}: {loading: boolean}) {
       if (!loading) {
         const loaderElement = document.getElementById("loader");
         if (loaderElement) {
-          loaderElement.classList.remove("loader-visible");
+          loaderElement.style.opacity = "0";
           setTimeout(() => {
             loaderElement.style.display = "none";
           }, 500);
@@ -18,7 +18,7 @@ export function Loader({loading}: {loading: boolean}) {
   }, [loading]);
 
   return (
-    <div id={"loader"} className={"loader-visible"}>
+    <div id={"loader"}>
       <TypeAnimation
         sequence={[
           " Loading...",

@@ -1,71 +1,63 @@
+import "../../styles/modals/about.sass";
+
 export default function About() {
   return (
     <>
       <h1>About me</h1>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl erat, tincidunt non erat sit
-      amet, commodo
-      sodales lorem. Integer ligula arcu, accumsan pretium purus nec, faucibus mollis libero. Sed tempor
-      turpis sit
-      amet
-      dolor gravida vehicula. Nunc lobortis, purus quis interdum lacinia, massa turpis semper urna, ut
-      fringilla dolor
-      est at nisl. Sed ultricies viverra nulla, a consequat augue tempor sed. In hac habitasse platea
-      dictumst. In
-      consectetur condimentum lectus vitae pretium. Etiam consectetur turpis in nunc ultrices imperdiet.
-      Fusce vel
-      condimentum felis. Morbi massa tortor, imperdiet luctus ante eu, dictum sollicitudin nulla. Nullam ut
-      lobortis
-      ex,
-      eu viverra dui. Sed dapibus dolor ex, id malesuada leo auctor et. Mauris aliquam nisl eget neque
-      sagittis,
-      hendrerit laoreet ligula posuere.
-
-      Quisque sed lobortis nisl. Quisque viverra, massa ut dignissim volutpat, urna felis facilisis odio, a
-      bibendum
-      quam nisl id turpis. Morbi at ornare dui. Integer in mauris elit. Phasellus venenatis auctor nibh sed
-      lobortis.
-      Cras feugiat fringilla nibh, quis tincidunt mi bibendum vitae. Pellentesque id nibh eu odio maximus
-      luctus. Orci
-      varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ut cursus
-      mauris. Quisque
-      finibus justo pretium dui varius, vel iaculis felis elementum. Nulla imperdiet orci vel velit vehicula
-      pretium.
-      Curabitur bibendum mi et ultrices iaculis. Suspendisse efficitur feugiat vehicula.
-
-      Duis quis ligula non ante blandit vulputate quis sed augue. Vestibulum lacinia finibus rutrum. Integer
-      sed lorem
-      ac urna euismod commodo sit amet condimentum purus. Donec ut augue quis erat egestas accumsan a a
-      ante. Aenean
-      lacinia libero non fringilla pulvinar. Sed vestibulum at nulla ac pretium. Proin vehicula aliquet
-      elit, nec
-      vulputate magna lacinia non. Aliquam bibendum eleifend convallis. Vestibulum sit amet varius eros.
-      Donec maximus
-      et ante sed convallis. Maecenas fringilla est nibh, ac dignissim ipsum egestas eu. Maecenas viverra
-      sit amet leo
-      eu volutpat. Phasellus non mi massa. Praesent pulvinar dolor non mauris commodo euismod.
-
-      Sed posuere lorem ut ipsum varius porttitor vitae auctor ante. Quisque fringilla imperdiet mollis.
-      Nullam
-      blandit
-      mi id dui feugiat viverra. Nunc lorem ex, dictum id faucibus vel, porta vitae mi. Maecenas malesuada
-      magna non
-      auctor tristique. Nam non tempus nibh. Nulla eu quam pellentesque, dignissim tortor at, euismod diam.
-
-      Aliquam molestie laoreet ex. Proin nisl neque, egestas ac neque sed, varius elementum risus. Donec eu
-      venenatis
-      ex. Morbi eu nibh et erat molestie commodo. Aliquam et efficitur ante. Aliquam volutpat sapien vitae
-      ipsum
-      suscipit, quis gravida elit vulputate. Nullam porttitor efficitur orci id ornare. Ut sit amet sapien
-      sed dui
-      venenatis dignissim. Vestibulum venenatis lacus felis, id congue nunc ultrices vel. Suspendisse
-      gravida dolor at
-      urna viverra pulvinar. Donec semper dolor at massa feugiat rutrum. Aenean blandit laoreet enim
-      dignissim porta.
-      Mauris augue turpis, rhoncus consequat tortor in, iaculis vestibulum dui. Sed justo odio, pharetra at
-      dolor
-      maximus, gravida egestas ipsum. Aenean mattis felis vitae dignissim placerat. Praesent volutpat nisi
-      dolor,
-      euismod iaculis arcu sollicitudin vitae.
+      Hi! I'm Marcel, a software/web developer from Poland. I'm currently studying Computer Science at the Częstochowa
+      University of Technology. I'm passionate about web development, especially front-end technologies, as well as
+      software development and UX/UI design. I'm always eager to learn new things and improve my skills.
+      <h2>Technologies</h2>
+      <section>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+        />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+             style={{filter: "invert(1)"}}/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+             style={{filter: "invert(1)"}}/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-plain.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"/>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+        />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg"
+             style={{filter: "invert(1)"}}/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webstorm/webstorm-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"/>
+      </section>
     </>
   );
 }

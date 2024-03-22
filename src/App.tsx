@@ -1,10 +1,10 @@
 import {useState} from "react";
+import {BrowserRouter} from "react-router-dom";
 import {Loader} from "./components/loader.tsx";
 import {Header} from "./components/header.tsx";
-import Spline from '@splinetool/react-spline';
-import './App.sass';
 import {Menu} from "./components/menu.tsx";
-import {BrowserRouter} from "react-router-dom";
+import './App.sass';
+import Spline from '@splinetool/react-spline';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -18,11 +18,7 @@ export default function App() {
           <Menu/>
           <Header/>
         </section>
-        {/*<section>*/}
-        {/*  <Content/>*/}
-        {/*</section>*/}
       </div>
-      {/*<Home/>*/}
     </BrowserRouter>
   )
 }
